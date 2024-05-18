@@ -23,7 +23,7 @@ CREATE TABLE marvel.superpowers (
 
 
 CREATE TABLE marvel.power_scores (
-    power_type VARCHAR(100),
+    power_type1 VARCHAR(100),
     score INT,
     zone VARCHAR(1)
 );
