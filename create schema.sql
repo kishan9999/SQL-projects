@@ -28,3 +28,13 @@ CREATE TABLE marvel.power_scores (
     zone VARCHAR(1)
 );
 
+CREATE TABLE marvel.assemble (
+    Name VARCHAR(50),
+    Age INT,
+    Power INT,
+    Category VARCHAR(20),
+    subcategory VARCHAR(20),
+    Date DATE,
+    Date2 DATE,
+    score INT
+);
