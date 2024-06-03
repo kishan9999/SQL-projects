@@ -22,3 +22,18 @@ row_number() over(partition by category, subcategory order by date2, name DESC) 
 date
 from assemble 
 order by date;
+
+
+
+with assembleCTE as (
+select
+category,
+subcategory,
+sum(score) as sc2
+from assemble
+group by category, subcategory
+)
+select category,
+subcategory,
+sc2
+from assembleCTE
